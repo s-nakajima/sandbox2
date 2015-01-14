@@ -1,0 +1,31 @@
+{
+    "name":        "netcommons/snakajima",
+    "version":     "3.0.0",
+    "description": "NetCommons3",
+    "type":        "CMS",
+    "keywords":    ["CMS"],
+    "homepage":    "http://www.netcommons.org/",
+    "license":     "NetCommons License",
+    "authors": [
+        {
+            "name":     "NetCommons Community",
+            "homepage": "https://github.com/NetCommons3/NetCommons3/graphs/contributors"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/{$name}": ["type:cakephp-plugin"]
+        }
+    },
+    "require-dev": {
+        "netcommons/announcements":     "@dev",
+        "netcommons/net-commons":       "@dev"
+    },
+    "bin": [
+        "lib/Cake/Console/cake"
+    ],
+    "config": {
+        "vendor-dir": "vendors",
+        "process-timeout": 3000
+    }
+}
